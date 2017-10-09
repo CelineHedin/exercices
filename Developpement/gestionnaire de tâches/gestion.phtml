@@ -11,7 +11,7 @@
       <h1>Gestionnaire de tâches ;-)</h1>
       <?php for($i=0; $i<count($task); $i++):?>
         <?php if($task[$i][2] <= date("Y-m-d")): ?>
-          <p class="retard"><input type="checkbox" name="choix" value="" > <?= $task[$i][0] ?> - <?= $task[$i][1] ?> - <?= $task[$i][2] ?>- <?= $task[$i][3] ?> - Vous etes en retard!!!</p>
+          <p class="retard"><input type="checkbox" name="choix" value="" > <?= $task[$i][0] ?> - <?= $task[$i][1] ?> - <?= $task[$i][2] ?>- <?= $task[$i][3] ?> - Vous etes en retard!!</p>
         <?php else: ?>
           <p><input type="checkbox" name="choix" value=""> <?= $task[$i][0] ?> - <?= $task[$i][1] ?> - <?= $task[$i][2] ?>- <?= $task[$i][3] ?></p>
         <?php endif ?>
