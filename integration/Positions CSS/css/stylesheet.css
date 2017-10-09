@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+html{
+  font-size: 100%;/*pour partir sur base de 16px. si on veut partir de 10px, il faut mettre 62.5%*/
+}
+body{
+  width: auto;
+  font-family: arial,helvetica, sans-serif;
+  line-height: 1.6;
+  padding-top: 120px;
+}
+/*4 positions css possibles : absolute, relative, fixed, static (par defaut)*/
+nav{
+  padding: 1.5em;
+  background-color: rgba(0,0,0,0.95);
+  font-size: 1.5rem;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+nav a{
+  color:#fff;
+  text-decoration: none;
+  background-color: #aaa;
+  padding: 0.5em;
+  display: inline-block;
+  margin: 0 0.2em;
+}
+em{
+  background-color: hotpink;
+  padding: 0.5em;
+  font-size: 1.5em;
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+strong{
+  background-color: steelblue;
+  padding: 0.5em;
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+article{
+  position: relative;
+  border: 2px solid red;
+  margin-bottom: 50px;
+}
+article p{
+  position: relative;
+}
+.coucou{
+  background-color: olive;
+  padding: 0px;
+}
+button{
+  background-color: tomato;
+  height: 40px;
+  width: 40px;
+  border: 2px solid grey;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  font-size: 7px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top:-20px;
+  right: -20px;
+  z-index: 4;
+}
+h2{
+  background-color: orangered;
+  margin: 0;
+  border: 1px solid #333;
+  position: relative;
+  z-index: 5;
+}
+
+aside>ul>li{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.3em;
+  background-color: olive;
+  text-transform: uppercase;
+  position: relative;
+}
+
+aside>ul>li>ul{
+  position: absolute;
+  top: 100%;
+  left:0px;
+  background-color: grey;
+}
+ul ul ul{
+  position:absolute;
+  top: 0;
+  left: 100%;
+  background-color: tomato;
+  padding: 0.3em;
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+li{
+  position: relative;
+}
+ul ul{
+  display: none;
+}
+li:hover>ul{
+  display: block;
+}
+@media screen and (max-width: 600px){
+  nav{
+    padding: 1.5em;
+    font-size: 1.5rem;
+    position: static;
+    z-index: 999;
+    width: 100%;
+  }
+  body{
+    padding: 0;
+  }
+}

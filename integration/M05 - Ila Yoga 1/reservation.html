@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="css/yoga.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display" rel="stylesheet">
+  <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+  <title>Ila Yoga2</title>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Agenda</a>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Livre d'or</a>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Album Photo</a>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Nous contacter</a>
+    </nav>
+    <section>
+      <p><span>offre promo </span>: Votre premier cours d'essai gratuit !</p>
+    </section>
+    <section>
+      <h1>Bienvenue sur le site d'Ila Yoga</h1>
+    </section>
+  </header>
+
+  <main>
+    <section class="bandeau">
+        <article>
+          <h2>Reserver votre place pour le prochain cours de Yoga du rire!</h2>
+         <table border=2px>
+            <caption>Yoga du rire avec Jacqueline (Paris)</caption>
+            <thead>
+              <tr>
+                <td>05 janvier 2016</td>
+                <td>15h30</td>
+                <td><a href="#">Reserver ce créneau</a></td>
+              </tr>
+            </thead>
+            <tfoot>
+
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>10 janvier 2016</td>
+                <td>16h30</td>
+                <td><a href="#">Reserver ce créneau</a></td>
+              </tr>
+              <tr>
+                <td>15 janvier 2016</td>
+                <td>15h30</td>
+                <td><a href="#">Reserver ce créneau</a></td>
+              </tr>
+              <tr>
+                <td>20 janvier 2016</td>
+                <td>16h30</td>
+                <td><a href="#">Reserver ce créneau</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table border=2px>
+             <caption>Yoga du rire avec Roger (Marseille)</caption>
+             <thead>
+               <tr>
+                 <td>10 janvier 2016</td>
+                 <td>16h30</td>
+                 <td><a href="#">Reserver ce créneau</a></td>
+               </tr>
+             </thead>
+             <tfoot>
+
+             </tfoot>
+             <tbody>
+               <tr>
+                 <td>10 janvier 2016</td>
+                 <td>16h30</td>
+                 <td><a href="#">Reserver ce créneau</a></td>
+               </tr>
+               <tr>
+                 <td>15 janvier 2016</td>
+                 <td>15h30</td>
+                 <td><a href="#">Reserver ce créneau</a></td>
+               </tr>
+               <tr>
+                 <td>20 janvier 2016</td>
+                 <td>16h30</td>
+                 <td><a href="#">Reserver ce créneau</a></td>
+               </tr>
+             </tbody>
+           </table>
+          <!--<table border='2px'>
+            <caption>Toto</caption>
+            <thead>
+              <tr>
+                <td>Mois</td>
+                <td>Janvier</td>
+                <td>Fevrier</td>
+                <td>mars</td>
+                <td>avril</td>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Total</th>
+                <th>60</th>
+                <th>x</th>
+                <th>x</th>
+                <th>x</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>quentin</td>
+                <td>10</td>
+                <td colspan="2">x</td>
+                <td>x</td>
+              </tr>
+              <tr>
+                <td>ali</td>
+                <td>20</td>
+                <td>x</td>
+                <td>x</td>
+                <td rowspan="2">x</td>
+              </tr>
+              <tr>
+                <td>sylvie</td>
+                <td>30</td>
+                <td>x</td>
+                <td>x</td>
+              </tr>
+            </tbody>
+          </table>-->
+      </article>
+      <article>
+        <h2>Pour valider votre reservation, completer ce formulaire :</h2>
+        <form class="formulaire" action="" method="get">
+          <fieldset class="coordonnees">
+            <legend>Vos coordonnées</legend>
+            <div class="prenom ib">
+              <label for="prénom">Votre prénom :</label>
+              <input type="text" name="prénom" placeholder="Votre prénom SVP" required max length="15" value="">
+            </div>
+            <div class="nom ib">
+              <label for="nom">Votre nom :</label>
+              <input type="text" name="nom" placeholder="Votre nom SVP" value="">
+            </div>
+            <!--<div class="age ib">
+              <label for="age">Votre age :</label>
+              <input type="date" name="age" autofocus placeholder="Votre nom SVP" value="">
+            </div>-->
+            <div class="mail ib">
+              <label for="mail">Adresse mail :</label>
+              <input type="email" name="mail" placeholder="Votre mail SVP" value="">
+            </div>
+          </fieldset>
+          <fieldset class="raisons">
+            <legend>Quelles sont les raisons de votre venue?</legend>
+          <!--  <input type="text" name="nom" id="nom" value="">-->
+            <label for="detendre">Besoin de me détendre</label>
+            <input type="checkbox" name="detendre" value="">
+            <label for="docteur">Mon médecin m'a conseillé de venir</label>
+            <input type="checkbox" name="docteur" value="">
+            <label for="amis">Je veux tester avec des amis</label>
+            <input type="checkbox" name="amis" value="">
+          </fieldset>
+          <input type="submit" value="Envoyer">
+        </form>
+
+      <!--  <form class="" action="index.html" method="post">
+          <input type="submit" value="Envoyer">
+          <button type="submit">Envoyer</button>
+          <input type="reset" value="Effacer tous les champs">
+        </form>-->
+      </article>
+    </section>
+  </main>
+  <footer>
+    <article class="footer">
+      <img src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png" alt="logo 3WA">
+      <p>2016-3wa-exercice 5: Ila yoga</p>
+  </article>
+  </footer>
+</body>
+</html>

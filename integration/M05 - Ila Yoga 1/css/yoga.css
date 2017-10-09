@@ -1,0 +1,246 @@
+*{
+  box-sizing: border-box;
+  max-width: 1200px;
+  outline: none;
+}
+body{
+    font-family: "Playfair Display", sans-serif;
+    margin: 0;
+}
+header{
+    background-image: url(../img/fond.jpg);
+    background-size: cover;
+    text-align: center;
+    color : #fff;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+nav{
+  background-color: rgba(255,255,255,0.5);
+  font-size: 1.5em;
+}
+nav a{
+  text-decoration: none;
+  font-family: "kaushan Script", sans-serif;
+  margin: 2%;
+  color : #fff;
+  display: inline-block;
+  margin-bottom: 2%;
+}
+nav .fa{
+   display: block;
+ }
+header p{
+  background-color: rgba(255,255,255,0.3);
+  margin: 0;
+  padding: 1% 0;
+}
+span{
+  text-transform: uppercase;
+}
+h1{
+  font-family: "kaushan Script", sans-serif;
+  padding-bottom: 20%;
+  padding-top: 6%;
+  font-size: 2em;
+  font-weight: lighter;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.3);/*pour mettre du floue derrière le texte*/
+}
+
+/**/
+.bandeau{
+  padding-left: 1%;
+  padding-right: 1%;
+
+}
+.bandeau article:nth-of-type(odd) img{
+  float:left;
+  overflow: hidden;
+}
+.bandeau article:nth-of-type(even) img{
+  float:right;
+  overflow: hidden;
+}
+.bandeau img{
+  width: 25%;
+  margin: 1%;
+}
+.bandeau h2{
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.bandeau article{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 1.3%;
+  line-height: 28px
+}
+hr{
+  width: 80%;
+  color: grey;
+}
+/**/
+.fondviolet{
+  background-image: url(../img/background_section.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.fondviolet h2{
+  text-align: center;
+  font-weight: normal;
+}
+.fondviolet article{
+  width: 33.3%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+
+}
+.fondviolet img{
+  width: 50%;
+}
+.fondviolet p{
+  text-align: center;
+  padding: 11%;
+  line-height: 22px
+}
+/**/
+iframe{
+  width: 100%;
+  display: block;
+}
+footer .footer{
+  background-image: url(../img/background_section.jpg);
+  background-size: cover;
+  text-align: center;
+  background-position: bottom;
+  margin: 0;
+  padding: 1%;
+  color: #fff;
+}
+/*tableau*/
+
+/*table{
+  border: 1px solid black;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+th{
+
+  background-color: #9c80d7;
+}*/
+table{
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+thead{
+  background-color: #f2f3e3;
+}
+tr:nth-child(even){
+  background-color: #f2f3e3;
+}
+td{
+  text-align: center;
+}
+td:first-child{
+  text-align: left;
+}
+caption{
+  background-color: #9c80d7;
+  text-align: left;
+  color: #fff;
+  padding-left: 4px;
+}
+table a{
+  text-decoration: none;
+}
+
+/*Formulaire*/
+
+.coordonnees{
+  padding-left: 6px;
+  padding-bottom: 6px;
+}
+.ib{
+  display: inline-block;
+  width: 33%;
+  font-size: 0.8em;
+}
+
+.coordonnees legend{
+  margin-top: -16px;
+  background-color: #fff;
+  margin-right: 47em;
+}
+input{
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+input:focus{
+  border: 1px solid red;
+}
+input[type="text"]{
+  background-color: hotpink;
+}/*css par attribu mettre un background color pour les input qui ont un type texte*//*input[type^=t] c'est pour rechercher les élements qui ont une class qui commence par T*//*voir sur css by attribute:regex sur internet*/
+fieldset{
+  border:1px solid #c7c2c2;
+}
+#reputation{
+  width: 100%;
+}
+@media screen and (max-width: 700px){
+  body{
+    background-color: tomato;
+  }
+  .fondviolet article{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 562px){
+  nav a{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+
+}

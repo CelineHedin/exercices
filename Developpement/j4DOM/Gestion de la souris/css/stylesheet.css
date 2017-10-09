@@ -1,0 +1,19 @@
+
+
+.rectangle{
+  background-color: royalblue;
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.good{
+  background-color: limegreen;
+}
+.important{
+  background-color: firebrick;
+}
+.hide{
+  display : none;
+}

@@ -1,0 +1,15 @@
+body{
+  box-sizing: 800px
+}
+h1{
+  background-color: red;
+  text-align: center;
+}
+img{
+  float:left;
+  margin-right: 10px;
+  width: 300px;
+}
+p{
+  margin-right: 10px;
+}

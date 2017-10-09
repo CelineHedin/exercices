@@ -1,0 +1,140 @@
+*{
+  max-width: 2200px;
+  box-sizing: border-box;
+}
+body{
+  font-family: "PT Sans narrow", "Open Sans", sans-serif;
+  color: #3c3734;
+  margin: 0;
+  line-height: 1.6;
+
+}
+/*Header*/
+header{
+    text-align: center;
+}
+header img{
+  width: 14%;
+}
+nav{
+  background-color: #30A894;
+  font-size: 0;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  width: 33.33%;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0.6em 0;
+  transition: all 0.4s;
+}
+nav a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translate(-5px);
+}
+/*Bienvenue sur le site de créasoul*/
+.container{
+  width: 80%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main{
+  background-color: grey;
+}
+.bienvenue{
+  width: 70%;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 1%;
+  line-height: 128%;
+}
+.bienvenue h1{
+  color: #30A894;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-bottom: 1px solid #30A894;
+  line-height: normal;
+  font-weight: lighter;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+h2{
+  color: #30A894;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #30A894;
+  font-weight: lighter;
+  padding-bottom: 4px;
+  margin-bottom: -5px;
+}
+span{
+    color: #30A894;
+}
+/*Bandeau*/
+.bandeau{
+  background-color: #B8DCB1;
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1%;
+}
+.bandeau p{
+  margin-top: 8px;
+}
+/*footer*/
+footer{
+  text-align: center;
+  font-size: 0.5em;
+  background-color: grey;
+}
+footer img{
+  width: 4%;
+}
+@media screen and (max-width: 970px){
+  nav a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2%;
+  }
+  .bienvenue{
+    display:block;
+    width: 100%;
+  }
+  .bienvenue img{
+    width: 100%;
+  }
+  .bandeau{
+    display:block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px){
+  header img{
+    width: 24%;
+  }
+  nav a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2%;
+  }
+  .bienvenue{
+    display:block;
+    width: 100%;
+  }
+  .bienvenue img{
+    width: 100%;
+  }
+  .bandeau{
+    display: none;
+  }
+  footer img{
+    width: 10%;
+  }
+}

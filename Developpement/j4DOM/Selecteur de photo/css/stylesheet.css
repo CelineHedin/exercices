@@ -1,0 +1,23 @@
+body{
+  max-width: 800px;
+}
+ul li{
+  display: inline-block;
+  margin: 1em;
+  padding: 0.5em;
+}
+li:hover{
+  background-color: silver;
+}
+
+em{
+  color : red;
+  font-weight: bold;
+}
+
+
+/* j'ai rajouté "li" dans le selecteur
+et ca marche */
+li.selected{
+  background-color: forestgreen;
+}

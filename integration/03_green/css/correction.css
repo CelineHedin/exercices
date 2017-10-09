@@ -1,0 +1,182 @@
+/*general rules*/
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image:url(../img/fond.png);
+  background-repeat: repeat;
+  background-color: grey;
+  font-family : Verdana, sans-serif;
+  color:#444;
+  line-height: 1.5;
+  margin:0;
+}
+/*background-repeat: repeat: repeter un nombre de fois illimité
+no-repeat : ne repète pas
+repeat-x : répète sur l'axe x */
+.cta{
+  color: white;
+  background-color: #b8cb21;
+  text-decoration:none;
+  padding: 10px;
+  border-radius: 3px; /*arrondir les bords*/
+  /*margin-top: 50px;/*ne fonctionne pas sur du in-line*/
+  /*width: 300px;/* ne fonctionne pas sur in-line*/
+  /*height: 100px;/* ne fonctionne pas sur in-line*/
+  /*display: block;/*pour que margin-top,width,heigth fonctionne*/
+  /*display: inline-block; /*pour mettre le mot dans boutton au centre*/
+  float: right;
+}
+
+/*header*/
+header{
+  background-color: #b8cb21;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;/*pour retrouver la hauteur initiale*/
+}
+main{
+  background-color: #fff;
+  padding:20px;
+  border: 10px solid olive;
+  box-sizing: border-box;/*pour éviter que les paddings et border sortent du champs à mettre dans* */
+  clear: both;/*main reprend sa place dans le flux*/
+  margin-top: 10px;
+}
+header,
+main/* creer une règle pour header et main*/{
+  width: 90%;/*taille du bandeau de 90*/
+  max-width: 800px;/*taille du site max 800px*/
+  margin-left: auto;/* pour centrer*/
+  margin-right: auto;/*centrer*/
+}
+nav{
+  /*width: 200px;*/
+  /*border: 1px dashed #111;*/
+  /*float: right;*/
+}
+header img{
+  float: left;
+}
+nav {
+  text-align: right;
+  margin-top: 50px;
+}
+nav a{
+  /*padding: 15px*/
+  margin: 10px;
+  text-transform: uppercase;
+  color: #2c4726;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;/*souligner en dessous*/
+  padding-bottom: 5px;/*jouer avec l'éloignement du border*/
+  font-family: 'Oswald', sans-serif;
+}
+/*nav a:before{
+  content:url("../img/who.jpg");
+  margin-right: 5px;
+}*/
+nav a::after{
+  content:"§";
+  margin-left: 5px;
+}
+h1,
+h2,
+h3,
+h4,
+nav{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #b8cb21;
+}
+article img{
+  float: left;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 10px 10px 0;
+}
+article{
+  overflow: hidden;
+}
+footer{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 12px;
+}
+footer img{
+  width:60px;
+}
+.fa{
+  color: blue;
+} /* pour changer la couleur du logo devant titre*/
+.fa.fa-cubes{
+  color: yellow;
+}/* pour changer la couleur de la class du pictogramme fa-cube!! fa-cube a ici 2 classe*/
+.layout-float{
+  background-color: grey;
+  padding: 30px;
+  overflow: hidden;
+}
+.layout-float article{
+  width: 46%;
+  float:left;
+  background-color: olive;
+  padding: 15px;
+  margin: 2%;
+}
+.layout-float img{
+  float: none;/*pour éviter que le texte passe à coté de l'image quand on est à 50%*/
+  width: 100%;
+}
+.layout-inline-block{
+  clear: both;
+}
+.layout-float-gap{
+  background-color: #333;
+  overflow: hidden;
+  padding:10px;
+}
+.layout-float-gap article{
+  width: 45%;
+  float:left;
+  /*padding: 10px;*/
+  margin-right: 10%;
+  background-color: olive;
+}
+.layout-float-gap .last{
+  /*margin-right: 0; technique pour centrer les 2 acticles*/
+
+}
+.layout-float-gap article:last-of-type{
+  /*margin-right: 0; /*pour le dernier élement de l'article du layout-float-gap*/
+}
+.layout-float-gap article+article{
+  margin-right: 0;/*pour que tous les articles (à partir du 2ème) qui précèdent un autre puissent avoir un margin à droite. si on veut à partir du troisième article, on notera article+article+article*/
+}
+ul li:last-of-type{
+  background-color: blue;
+}
+ul li:first-child{
+  background-color: red;
+}
+ul li:nth-of-type(even){/*pour colorer toutes les listes paires. impaire:odd*/
+  background-color: white;
+}
+ul li:nth-of-type(3n+1)/*3n pour colorer une fois sur 3, +1 pour commencer au 1er*/{
+  font-weight: bold;
+}
+.layout-inline-block{
+  background-color: olive;
+  padding: 10px;
+  font-size: 0;
+}
+.layout-inline-block article{
+  background-color: grey;
+  padding: 10px;
+  width: 50%;
+  display: inline-block;
+  font-size: initial;
+  vertical-align: top;
+}

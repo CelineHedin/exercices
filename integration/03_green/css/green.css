@@ -1,0 +1,40 @@
+body{
+  background-image: url(http://localhost/integration/M03%20-%20Green%20Office/img/fond.png);
+  background-repeat: repeat;
+  background-color: grey;
+  font-family : Verdana, sans-serif;
+  color:#444;
+  line-height: 1.5;
+  margin:0;
+}
+header{
+  background-color: #b8cb21;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main{
+background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav a{
+  color: #2d4724;
+  font-family: Oswald,sans-serif;
+  text-transform:uppercase;
+}
+h2{
+  text-transform: uppercase;
+  color: #b8cb21;
+}
+article a{
+  background-color: #b8cb21;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+footer img{
+
+}

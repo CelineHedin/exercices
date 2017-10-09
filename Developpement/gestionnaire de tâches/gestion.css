@@ -1,0 +1,55 @@
+body{
+  background-color: grey;
+}
+main{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+h1{
+  color : red;
+  text-align: center;
+}
+fieldset{
+  border-radius: 15px;
+  margin: 25px;
+}
+input{
+  margin: 10px 0;
+}
+.tache{
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+label{
+  margin-right: 20px;
+}
+.titre input{
+  width: 80%;
+}
+.titre label{
+  margin-right: 59px;
+}
+.tache label{
+  margin-right: 56px;
+}
+.priorite label{
+  margin-right: 37px;
+}
+.priorité input{
+  margin-right: 25px;
+}
+.ajouter{
+  background-color: grey;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 7px;
+}
+.retard{
+  color : red;
+}
