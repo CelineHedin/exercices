@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liste de commande</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="ubuntu-logo_60ddb9.png">
+  </head>
+  <body>
+    <header>
+      <h1>Bons de commande</h1>
+    </header>
+    <main>
+      <table>
+        <caption>Liste des commandes</caption>
+        <thead>
+          <th>Commande</th>
+          <th>Date de commande</th>
+          <th>Date de livraison</th>
+          <th>Statut</th>
+        </thead>
+        <tbody>
+          <?php for($i=0 ; $i<count($result); $i++):?>
+          <tr>
+            <td><a href="detail.php?id=<?=  $result[$i]["orderNumber"]; ?>"><?=  $result[$i]["orderNumber"]; ?></a></td>
+            <td><?= $result[$i]["orderDate"]; ?></td>
+            <td><?= $result[$i]["shippedDate"]; ?></td>
+            <td><?= $result[$i]["status"]; ?></td>
+          </tr>
+        <?php endfor ?>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>traduction</title>
+  </head>
+  <body>
+    <h1>traduction anglais/français</h1>
+
+    <?php if($resultat == null): ?>
+      <form class="" action="trad.php" method="POST">
+        <label for="">Mot en français :</label>
+        <input type="text" name="frenchword">
+        <select class="" name="lang">
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+        </select>
+        <input type="submit" name="" value="envoyer">
+      </form>
+
+    <?php else: ?>
+      <p>La traduction est : <?=$resultat?></p>
+
+    <?php endif ?>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gestionnaire de taches</title>
+    <link rel="stylesheet" href="gestion.css">
+    <link rel="icon" href="téléchargement.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <h1>Gestionnaire de tâches ;-)</h1>
+      <h2>Date du jour: <?php echo date("Ymd") ?></h2>
+      <?php for($i=0; $i<count($task); $i++):?>
+        <?php if(str_replace($task[$i][2], "-", "") <= date("Ymd")): ?>
+          <p class="retard"><input type="checkbox" name="choix" value="" > <?= $task[$i][0] ?> - <?= $task[$i][1] ?> - <?= $task[$i][2] ?>- <?= $task[$i][3] ?></p>
+        <?php else ?>
+          <p><input type="checkbox" name="choix" value=""> <?= $task[$i][0] ?> - <?= $task[$i][1] ?> - <?= $task[$i][2] ?>- <?= $task[$i][3] ?></p>
+        <?php endif ?>
+      <?php endfor ?>
+      <form class="" action="delete.php" method="post">
+        <input type="submit" name="supprimer" value="Supprimer">
+      </form>
+
+      <form class="" action="add.php" method="POST">
+        <fieldset>
+          <legend>Informations sur la tâche</legend>
+          <div class="titre">
+            <label for="titre">Titre :</label>
+            <input type="text" name="titre" value=""><br>
+          </div>
+          <div class="tache">
+            <label for="tache">Tâche :</label>
+            <textarea name="tache" rows="8" cols="80"></textarea><br>
+          </div>
+          <div class="date">
+            <label for="endDate">Date de fin :</label>
+            <input type="date" name="endDate" value=""><br>
+          </div>
+          <div class="priorite">
+            <label for="priority">Priorités :</label>
+            <input type="radio" name="priority" value="basse"><label for="basse">Basse</label>
+            <input type="radio" name="priority" value="normale"><label for="normale">Normale</label>
+            <input type="radio" name="priority" value="haute"><label for="haute">Haute</label><br>
+          </div>
+          <input class="ajouter" type="submit" name="ajouter" value="Ajouter">
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

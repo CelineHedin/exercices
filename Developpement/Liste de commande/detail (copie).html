@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liste de commande</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="ubuntu-logo_60ddb9.png">
+  </head>
+  <body>
+    <header>
+      <h1>Bons de commande </h1>
+      <a href="index.php">Retour à l'accueil</a>
+    </header>
+    <main>
+      <article class="information order-form-customer">
+        <h2><?= $coordonne["customerName"]?></h2>
+        <h3><?= $coordonne["contactLastName"]?></h3>
+        <p><?= $coordonne["contactFirstName"]?></p>
+        <p><?= $coordonne["addressLine1"]?></p>
+        <p><?= $coordonne["city"]?></p>
+      </article>
+      <table class="bon standard-table" >
+        <caption>Bon de commande n° <?=  $id ?></caption>
+        <thead>
+          <th>Produit</th>
+          <th>Prix Unitaire</th>
+          <th>Qantité</th>
+          <th>Prix Total</th>
+        </thead>
+        <tfoot>
+          <tr>
+            <td class="droite" colspan="3">Montant Total HT</td>
+            <td><?= round( $total["montantTotal"],2)?>€</td>
+          </tr>
+          <tr>
+            <td class="droite" colspan="3">TVA (20 %)</td>
+            <td><?= round( $total["TVA"],2)?>€</td>
+          </tr>
+          <tr>
+            <td class="droite" colspan="3">Montant Total TTC</td>
+            <td><?= round( $total["TTC"],2)?>€</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <?php for($i=0; $i<count($detail); $i++):?>
+          <tr>
+            <td><?= $detail[$i]["productName"]?></td>
+            <td><?= $detail[$i]["priceEach"]?></td>
+            <td><?= $detail[$i]["quantityOrdered"]?></td>
+            <td><?= round( $detail[$i]["prixTotal"],2)?></td>
+          </tr>
+        <?php endfor ?>
+
+        </tbody>
+
+      </table>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nombre</title>
+  </head>
+  <body>
+    <?php if($jeux != null): ?>
+      
+      <p> resultat : <?=$jeux?></p>
+
+    <?php endif ?>
+
+    <h1>Trouver le nombre entre 0 et 100</h1>
+    <form class="formulaire" action="nombre.php" method="POST">
+      <label for="">Donner un chiffre entre 0 et 100</label>
+      <input type="text" name="nombre" value="">
+      <input type="submit" name="" value="Envoyer">
+    </form>
+  </body>
+</html>
