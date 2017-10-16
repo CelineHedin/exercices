@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <title>Carnet d'adresse</title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  </head>
+  <body>
+    <h1 class="contain"><i class="fa fa-book" aria-hidden="true"></i>Carnet d'Adresses</h1>
+    <section id="addressBook" class="contain">
+
+    </section>
+    <p id="coordonnee"></p>
+      <a href="#" >Editer le contact</a>
+    <nav class="contain first">
+      <button id ="plus" type="button" name="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      <button id = "trash" type="button" name="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
+    </nav>
+    <section class="contain section">
+      <form class="form" action="index.html" method="post">
+        <div class="">
+          <label for="civilite">Civilité :</label>
+          <select class="civilite" name="civilite">
+            <option value="Mlle">Mademoiselle</option>
+            <option value="Mme">Madame</option>
+            <option value="M.">Monsieur</option>
+            <option value="N.">Neutre</option>
+          </select>
+        </div>
+        <div class="">
+          <label  for="nom">Nom :</label>
+          <input class="nom" type="text" name="nom" value="">
+        </div>
+        <div class="">
+          <label for="prenom">Prenom :</label>
+          <input class="prenom" type="text" name="prenom" value="">
+        </div>
+        <div class="">
+          <label for="tel">Téléphone :</label>
+          <input class="tel" type="tel" name="tel" value="">
+        </div>
+        <input class="enregistrer" type="button" name="enregistrer" value="enregistrer">
+      </form>
+    </section>
+    <script src="index.js">
+
+    </script>
+  </body>
+</html>
