@@ -1,0 +1,15 @@
+<main>
+  <h1>Hackathon</h1>
+  <?php foreach ($results as $result): ?>
+  <p>coucou <?= $result["nom"]?> <?= $result["prenom"]?>!!! <a href="php/add.php?id=<?= $result["id"]?>">test</a></p>
+  <?php endforeach ?>
+  <form class="" action="php/form.php" method="POST">
+    <label for="nom">Nom</label>
+    <input type="text" name="nom" value="">
+    <label for="">Prenom</label>
+    <input type="text" name="prenom" value="">
+    <label for="">date de naissance</label>
+    <input type="date" name="date" value="">
+    <input type="submit" name="envoyer" value="Envoyer">
+  </form>
+</main>

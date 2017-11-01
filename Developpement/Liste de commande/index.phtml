@@ -20,14 +20,13 @@
           <th>Statut</th>
         </thead>
         <tbody>
-          <?php for($i=0 ; $i<count($result); $i++):?>
-          <tr>
-            <td><a href="detail.php?id=<?=  $result[$i]["orderNumber"]; ?>"><?=  $result[$i]["orderNumber"]; ?></a></td>
-            <td><?= $result[$i]["orderDate"]; ?></td>
-            <td><?= $result[$i]["shippedDate"]; ?></td>
-            <td><?= $result[$i]["status"]; ?></td>
+          <?php foreach ($result as $resultat): ?>
+            <td><a href="detail.php?id=<?= $resultat["orderNumber"]; ?>"><?=  $resultat["orderNumber"]; ?></a></td>
+            <td><?= $resultat["orderDate"]; ?></td>
+            <td><?= $resultat["shippedDate"]; ?></td>
+            <td><?= $resultat["status"]; ?></td>
           </tr>
-        <?php endfor ?>
+        <?php endforeach ?>
         </tbody>
       </table>
     </main>

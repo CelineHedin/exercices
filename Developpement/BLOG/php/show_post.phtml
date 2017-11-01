@@ -1,0 +1,31 @@
+
+<main class="container">
+  <section class="article poste">
+    <h1>Les dernières actualités</h1>
+    <article class="">
+      <h2><?= $articles["Title"] ?></h2>
+      <div class="">
+        <img src="<?= $articles["img"]?>" alt="fauteuil de bureau" class="size">
+        <p><?= nl2br($articles["Contents"]) ?></p>
+        <p><?= $articles["CreationTimestamp"] ?> - Auteur : <?= $articles["FirstName"] ?> <?= $articles["LastName"] ?> - catégorie : <?= $articles["Name"] ?></p>
+      </div>
+    </article>
+    <form class="" action="add_comment.php" method="POST">
+      <input type="hidden" name="post_id" value="<?= $index?>"> <!--cacher un formulaire : type="hidden"-->
+      <fieldset>
+        <legend>Nom</legend>
+        <input type="text" name="Nom" value="">
+      </fieldset>
+      <fieldset>
+        <legend>Commentaires</legend>
+        <textarea name="comments" rows="8" cols="80"></textarea>
+      </fieldset>
+      <input class="envoyer" type="submit" name="Envoyer" value="Envoyer">
+      <button type="button" name="button">Voir les commentaires</button>
+    </form>
+    <?php foreach($comments as $comment):?><fieldset class="remarques">
+      <p><?= htmlspecialchars($comment["NickName"])?></p>
+      <p><?= htmlspecialchars($comment["Contents"])?></p>
+      <p><?= $comment["CreationTimestamp"]?></p>
+    </fieldset><?php endforeach?>
+</main>

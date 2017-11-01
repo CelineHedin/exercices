@@ -1,0 +1,9 @@
+<ul>
+	<?php foreach($orders as $order): ?>
+		<li>
+		    number: <?= $order['orderNumber'] ?> 
+		    date: <?= $order['orderDate'] ?> 
+		    status: <?= $order['status'] ?> 
+	    </li>
+	<?php endforeach ?>
+</ul>

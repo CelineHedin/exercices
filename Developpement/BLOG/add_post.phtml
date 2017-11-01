@@ -1,0 +1,35 @@
+<main>
+  <form class="formulaire" action="add_post.php" method="POST">
+    <fieldset>
+      <div class="">
+        <label for="titre">Titre</label>
+        <input type="text" name="titre" value="">
+      </div>
+      <div class="">
+        <label for="Image">Image</label>
+        <input type="text" name="image" value="">
+      </div>
+      <div class="">
+        <label for="article">Article</label>
+        <textarea name="article" rows="8" cols="150"></textarea>
+      </div>
+      <div class="">
+        <label for="Auteur">Auteur</label>
+        <select class="auteur" name="auteur">
+          <?php foreach ($auteur as $aut):?>
+            <option value="<?= $aut["Id"] ?>"><?= $aut["FirstName"] ?> <?= $aut["LastName"] ?></option>
+          <?php endforeach ?>
+        </select>
+      </div>
+      <div class="">
+        <label for="categorie">Catégorie</label>
+        <select class="" name="categories">
+          <?php foreach ($categorie as $cat):?>
+            <option value="<?= $cat["Id"] ?>"><?= $cat["Name"] ?></option>
+          <?php endforeach ?>
+        </select>
+      </div>
+      <input type="submit" name="Envoyer" value="Envoyer">
+    </fieldset>
+  </form>
+</main>

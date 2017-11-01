@@ -59,7 +59,6 @@ function onClickPlus(){
   //var section = $(".section");
   $(".form").toggle();
   $("#coordonnee").hide();
-  $("#coordonnee").trigger('reset');
 }
 
 function onClick(){
@@ -70,12 +69,11 @@ function onClick(){
     $(".tel").val(),
   ];*/
 
-
   var t = {
-    civilité : $(".civilite").val(),
-    nom : $(".nom").val(),
-    prenom : $(".prenom").val(),
-    tel : $(".tel").val(),
+    civilité: $(".civilite").val(),
+    nom: $(".nom").val(),
+    prenom: $(".prenom").val(),
+    tel: $(".tel").val(),
   }
   //console.log(t.nom);
   liste.push(t);
@@ -83,7 +81,6 @@ function onClick(){
   refresh();
   $(".form").hide();
   $(".form").trigger('reset');
-  $("#coordonnee").trigger('reset');
 };
 
 
@@ -100,7 +97,6 @@ function onTrash(){
    liste = [];
    refresh();
    $("#coordonnee").hide();
-   $("#coordonnee").trigger('reset');
 }
 
 function onA(){

@@ -1,17 +1,17 @@
 <?php
-
+include "connexionBDD.php";
 
 $id = $_GET["id"];
 
 //recuperation de produit, prix unitaire , prix total...
 //1ere étape : connexion
-$pdo = new PDO("mysql:host=localhost;dbname=classicmodels", "root", "troiswa");
+
 
 //2eme etape : encodage
-$pdo->exec("SET NAMES UTF8");
+
 
 //3eme etape : requete
-$query = $pdo->prepare("SELECT orderdetails.orderNumber, productName, priceEach, quantityOrdered, (priceEach*quantityOrdered)
+$query = $pdo->prepare("SELECT orderdetails.orderNumber, productName, priceEach, quantityOrdered, products.productCode, (priceEach*quantityOrdered)
 AS prixTotal
 FROM products
 INNER JOIN orderdetails ON products.productCode= orderdetails.productCode

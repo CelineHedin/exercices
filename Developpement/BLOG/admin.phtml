@@ -1,0 +1,10 @@
+<main>
+  <section class="admin">
+    <a class= "new" href="add_post.php">Nouvel article</a>
+    <?php foreach ($admin as $adm): ?>
+      <a class="titre" href="#"><h1><?= $adm["Title"] ?></h1></a>
+      <a class="button" href="edit_post.php?id=<?= $adm['Id'] ?>">modifier</a>
+      <a class="button" href="delete_post.php?id=<?= $adm['Id'] ?>">supprimer</a>
+    <?php endforeach ?>
+  </section>
+</main>

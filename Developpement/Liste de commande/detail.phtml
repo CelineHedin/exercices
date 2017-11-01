@@ -42,14 +42,14 @@
           </tr>
         </tfoot>
         <tbody>
-          <?php for($i=0; $i<count($detail); $i++):?>
+          <?php foreach ($detail as $key): ?>
           <tr>
-            <td><?= $detail[$i]["productName"]?></td>
-            <td><?= $detail[$i]["priceEach"]?></td>
-            <td><?= $detail[$i]["quantityOrdered"]?></td>
-            <td><?= round( $detail[$i]["prixTotal"],2)?></td>
+            <td> <a href="product.php?nom=<?= $key["productCode"]?>"><?= $key["productName"]?></a> </td>
+            <td><?= $key["priceEach"]?></td>
+            <td><?= $key["quantityOrdered"]?></td>
+            <td><?= round($key["prixTotal"],2)?></td>
           </tr>
-        <?php endfor ?>
+        <?php endforeach ?>
 
         </tbody>
 

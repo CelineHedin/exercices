@@ -1,0 +1,24 @@
+<main>
+  <form class="formulaire" action="edit_post.php" method="POST">
+    <fieldset>
+      <div class="Id">
+        <label for="Id">Id</label>
+        <input type="text" name="Id" value="<?= htmlspecialchars($comments["Id"])?>">
+      </div>
+      <div class="">
+        <label for="titre">Titre</label>
+        <input type="text" name="titre" value="<?= htmlspecialchars($comments["Title"])?>">
+      </div>
+      <div class="">
+        <label for="Image">Image</label>
+        <input type="text" name="image" value="<?= htmlspecialchars($comments["img"])?>">
+      </div>
+      <div class="">
+        <label for="article">Article</label>
+        <textarea name="article" rows="8" cols="150" value=""><?= htmlspecialchars($comments["Contents"])?></textarea>
+      </div>
+
+      <input type="submit" name="Envoyer" value="Envoyer">
+    </fieldset>
+  </form>
+</main>

@@ -1,0 +1,30 @@
+
+<main class="container">
+  <section class="article">
+    <h1>Les dernières actualités</h1>
+    <?php foreach($details as $detail): ?><article class="">
+      <a class="titre" href=""show_post.php?id=<?=$detail["Id"]?>""><h2><?= $detail["Title"] ?></h2></a>
+      <div class="">
+        <img src="<?=$detail["img"]?>" alt="fauteuil de bureau" class="size">
+        <a href="show_post.php?id=<?=$detail["Id"]?>"><p><?= substr($detail["Contents"],0,100) ?>[...]</p>
+        <p><?= $detail["CreationTimestamp"] ?> - Auteur : <?= $detail["FirstName"] ?> <?= $detail["LastName"] ?> - catégorie : <?= $detail["Name"] ?></p></a>
+      </div>
+    </article><?php endforeach ?>
+
+  </section>
+  <section class = "publicite">
+    <h3>Publicité</h3>
+    <article class="pub">
+      <h4>La chasse au risque</h4>
+        <img class="imgpub" src="../img/atelier_mecanique_exercice.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><strong>Le DVD 30€</strong></p>
+        <a href="www.graphito.fr">Graphito prévention</a>
+    </article>
+    <article class="pub">
+      <h4>Site pour EPI</h4>
+        <img class="imgpub" src="../img/téléchargement.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="www.manutant.fr">Manutant</a>
+    </article>
+  </section>
+</main>

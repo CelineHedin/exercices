@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liste de commande</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="ubuntu-logo_60ddb9.png">
+  </head>
+  <body>
+    <header>
+      <h1>Détail des produits </h1>
+      <a href="index.php">Retour à l'accueil</a>
+    </header>
+    <main>
+      <table >
+        <caption>Détail du produit : <?=  $detailproduct["productName"] ?></caption>
+        <thead>
+          <th>Nom</th>
+          <th>Description</th>
+          <th>MSRP</th>
+          <th>Stock</th>
+        </thead>
+        <tbody>
+            <tr>
+              <td><?= $detailproduct["productName"] ?></td>
+              <td><?= $detailproduct["productDescription"] ?></td>
+              <td><?= $detailproduct["MSRP"] ?></td>
+              <td><?= $detailproduct["quantityInStock"] ?></td>
+            </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </main>
+  </body>
+</html>

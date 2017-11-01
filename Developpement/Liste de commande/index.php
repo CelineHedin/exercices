@@ -1,9 +1,8 @@
 <?php
+include "connexionBDD.php";
 //1ere étape : connexion
-$pdo = new PDO("mysql:host=localhost;dbname=classicmodels", "root", "troiswa");
 
 //2eme etape : encodage
-$pdo->exec("SET NAMES UTF8");
 
 //3eme etape : requete
 $query = $pdo->prepare("SELECT orderNumber, orderDate, shippedDate, orders.status

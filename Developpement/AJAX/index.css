@@ -1,0 +1,25 @@
+body{
+  background-color: #ecf0f2;
+}
+h1{
+  color: #e04944;
+}
+.container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section{
+  border: 1px solid #4896d9;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+fieldset{
+  border-color: #4896d9;
+  border-radius: 5px;
+}
+ul{
+  list-style: none;
+}

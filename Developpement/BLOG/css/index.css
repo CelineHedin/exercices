@@ -1,0 +1,263 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+  transition : all 0.5s;
+}
+html{
+  font-size: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+}
+body{
+  margin : 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color : #444;
+  max-width: 1500px;
+}
+img,
+video{
+  max-width: 100%;
+  margin: 10px;
+}
+.article .size{
+  width: 200px;
+  height: 150px;
+}
+.container{
+  width: 98%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/************************/
+nav{
+  display: flex;
+  align-items:center;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+a img{
+  width: 75%;
+  overflow: hidden;
+  padding-left: 20%;
+  margin-left: 11%;
+}
+a .logo{
+  width: 100%;
+}
+nav{
+  background-color: #b73e2f;
+  text-align: center;
+  padding: 25px 0;*/
+}
+nav a{
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #333;
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#color{
+  color: #000;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+    color: #000;
+}
+
+/***********************/
+main{
+display: flex;
+}
+.article article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(51,51,51,0.3);
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+.article{
+  width: 70%;
+}
+.article p{
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+div{
+  display: flex;
+  flex-wrap: nowrap;
+}
+h1{
+  font-size: 1.4rem;
+}
+h2{
+  font-size: 1.2rem;
+  color: #b73f30
+}
+div a{
+  text-decoration: none;
+  color: #333;
+}
+div img{
+  float: left;
+}
+.img{
+  width: 25%;
+  height: 25%;
+}
+.img2{
+  width: 40%;
+  height: 40%;
+}
+.titre{
+  text-decoration: none;
+}
+/*************************/
+.publicite{
+  width: 30%;
+  background-color: rgba(51,51,51,0.59);
+  color: #fff;
+  padding: 10px;
+}
+.pub{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow:hidden;
+  text-align: center;
+}
+.publicite a{
+  color: #fff;
+}
+.publicite article{
+  border-bottom: 1px solid rgba(183,62,47,0.31);
+  padding-bottom: 20px;
+}
+.imgpub{
+  width: 80%;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+h4{
+  width: 100%;
+}
+/*********************************/
+footer{
+  background-color: #b73e2f;
+  margin-top: 10px;
+}
+/********************************/
+.poste{
+  width: 100%;
+  text-align: justify;
+}
+fieldset{
+  border-color: #b73e2f;
+  margin: 10px 0;
+}
+.remarques{
+  background-color: #b73e2f;
+  color: #fff;
+}
+legend{
+  text-transform: uppercase;
+}
+.envoyer{
+  margin-bottom: 20px;
+  color: #b73e2f;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.poste div{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.poste .size{
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post_Id{
+  display: none;
+}
+/**********************************/
+.admin a{
+  text-decoration: none;
+}
+.admin .titre{
+  color: #b73e2f;
+}
+.new{
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px;
+  margin-left: 5px;
+}
+.button{
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+/**********************************/
+.formulaire{
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formulaire textarea{
+  width: 90%;
+  height: auto;
+}
+.formulaire label{
+  width: 10%;
+  text-align: right;
+  margin-right: 5px;
+}
+.formulaire div{
+  margin: 10px 0;
+}
+.Id{
+  display: none;
+}
