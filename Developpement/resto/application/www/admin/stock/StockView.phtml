@@ -1,0 +1,23 @@
+<table class="generic-table meal-list">
+    <caption>Carte du restaurant</caption>
+
+      <thead>
+        <tr>
+          <th>quantité</td>
+          <th>nom</td>
+          <th>description</td>
+          <th>prix</td>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach ($meals as $meal): ?>
+          <tr>
+            <td><?= $meal["QuantityInStock"] ?></td>
+            <td><?= $meal["Name"] ?></td>
+            <td><?= $meal["Description"] ?></td>
+            <td><?= $meal["SalePrice"] ?></td>
+          </tr>
+        <?php endforeach ?>
+      </tbody>
+
+</table>

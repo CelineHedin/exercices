@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="fr">
   <head>
+    <title>Hackaton</title>
     <meta charset="utf-8">
-    <title>Hackathon</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link href="css/font-awesome-4.7.0/css/font-awesome.css"
+    rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
   </head>
   <body>
+    <audio controls="controls" autoplay="true">
+    	<source src="audio/bande-son.mp3" type="audio/mp3">
+    </audio>
     <header>
-      <!-- a voir avec les autres-->
+      <nav >
+        <div>
+          <img src="https://png.icons8.com/headstone/color/24" title="Pierre tombale" width="24" height="24"><a href="php/admin.php">Admin</a>
+          <img src="https://png.icons8.com/ghost/color/24" title="Fantôme" width="24" height="24"><a href="contact.html">Contact</a>
+        </div>
+      </nav>
+      <section class="titre">
+        <h1>Ghost Hunter</h1>
+      </section>
+      <!--<form id="pseudo" action="index.php" method="post">
+        <h3>SCORE</h3>
+        <input type="text" name="pseudo"  placeholder="pseudo">
+        <button type="button" name="button">Validez</button>
+      </form>-->
     </header>
-      <?php include $template.".phtml" ?>
+
+    <?php include $template.".phtml" ?>
+
     <footer>
-      <!-- a voir avec les autres-->
+
+      <img src="http://www.polemedia-lafriche.com/sites/polemedia-lafriche.com/files/styles/main_wide/public/StarDust---logo-RVB.png?itok=qs74XDs9" alt="3wA">
+      <p>'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser <a href="#">un passage</a> du Lorem Ipsum, vous devez être sûr qu'il n'y a rien <a href="#">embarrassant</a> caché dans le texte. Tous les générateurs de Lo</p>
     </footer>
-  </body>
+
+  <script src="js/script.js">
+  </script>
+  <script src="js/hackathon.js">
+  </script>
 </html>

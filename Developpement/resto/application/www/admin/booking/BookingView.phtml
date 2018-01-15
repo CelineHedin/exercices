@@ -1,0 +1,22 @@
+<table class="generic-table meal-list">
+  <thead>
+    <tr>
+      <th>Booking Date</th>
+      <th>Booking Time</th>
+      <th>Number of seats</th>
+      <th>Name</th>
+      <th>CreationTimestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($booking as $book): ?>
+      <tr>
+        <td><?= $book['BookingDate'] ?></td>
+        <td><?= $book['BookingTime'] ?></td>
+        <td><?= $book['NumberOfSeats'] ?></td>
+        <td><?= $book['FirstName'] ?></td>
+        <td><?= $book['CreationTimestamp'] ?></td>
+      </tr>
+    <?php endforeach ?>
+  </tbody>
+</table>

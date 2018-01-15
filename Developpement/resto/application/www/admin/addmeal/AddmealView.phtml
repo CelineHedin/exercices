@@ -1,0 +1,49 @@
+<?php if($flashBag->hasMessages() == true): ?>
+    <aside id="notice" class="notice">
+        <?php foreach($flashBag->fetchMessages() as $message): ?>
+            <p><?= $message ?></p>
+        <?php endforeach ?>
+    </aside>
+<?php endif ?>
+
+<h2>Création d'un Meal</h1>
+<form class="generic-form" action="<?= $requestUrl ?>/admin/addMeal" method="POST">
+
+	<fieldset>
+		<legend><i class="fa fa-book"></i> Création d'un Meal</legend>
+		<ul>
+			<li>
+				<label for="lastName">Nom :</label>
+				<input  type="text" name="Name">
+			</li>
+			<li>
+				<label for="firstName">Photo :</label>
+				<input  type="text" name="Photo">
+			</li>
+
+			<li>
+				<label class="textarea" for="desription">Description :</label>
+				<textarea  name="Description" rows="3"></textarea>
+			</li>
+			<li>
+				<label for="quantite">Quantité :</label>
+				<input type="text" name="QuantityInStock">
+			</li>
+			<li>
+				<label for="buyprice">Buy Price :</label>
+				<input type="text"  name="BuyPrice">
+			</li>
+			<li>
+				<label for="SalePrice">Sale Price :</label>
+				<input type="text" name="SalePrice">
+			</li>
+		</ul>
+	</fieldset>
+
+	<ul>
+		<li>
+			<input class="button button-primary" type="submit" value="Créer le menu">
+			<a class="button button-cancel small" href="<?= $requestUrl ?>">Annuler</a>
+		</li>
+	</ul>
+</form>

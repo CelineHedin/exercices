@@ -1,0 +1,16 @@
+<main>
+  <form class="formulaire" action="edit_post.php" method="POST">
+    <fieldset>
+      <div class="Id">
+        <label for="Id">Id</label>
+        <input type="text" name="id" value="<?= htmlspecialchars($admin["id"])?>">
+      </div>
+      <div class="">
+        <label for="pseudo">Pseudo</label>
+        <input type="text" name="pseudo" value="<?= htmlspecialchars($admin["pseudo"])?>">
+      </div>
+
+      <input type="submit" name="Envoyer" value="Envoyer">
+    </fieldset>
+  </form>
+</main>

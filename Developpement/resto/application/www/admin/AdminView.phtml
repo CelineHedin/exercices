@@ -1,0 +1,16 @@
+<?php if($flashBag->hasMessages() == true): ?>
+    <aside id="notice" class="notice">
+        <?php foreach($flashBag->fetchMessages() as $message): ?>
+            <p><?= $message ?></p>
+        <?php endforeach ?>
+    </aside>
+<?php endif ?>
+<section>
+<h2>Admin</h2>
+<ul>
+  <li><a href="<?=$requestUrl?>/admin/booking">Booking</a></li>
+  <li><a href="<?=$requestUrl?>/admin/stock">Stock</a></li>
+  <li><a href="<?=$requestUrl?>/admin/orders">Orders</a></li>
+  <li><a href="<?=$requestUrl?>/admin/addMeal">Add Meal</a></li>
+</ul>
+</section>

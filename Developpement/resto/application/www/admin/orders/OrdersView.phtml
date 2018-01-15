@@ -1,0 +1,20 @@
+<table class="generic-table meal-list">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Creation Time Stamp</th>
+      <th>Total Amount</th>
+      <th>Nom</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($orders as $order):?>
+    <tr>
+      <td><?=$order["Id"]?></td>
+      <td><?=$order["CreationTimestamp"]?></td>
+      <td><?=$order["TotalAmount"]?></td>
+      <td><?=$order["LastName"]?></td>
+    </tr>
+  <?php endforeach ?>
+  </tbody>
+</table>
